@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  
+    <div class="todo-container">
+        <h1 id="todoname">Todo App</h1><hr>
+        <div class="todo-header">
+          <input type="text" id="todoInput" placeholder="Add a new task.....">
+          <label for="imageInput" id="addImg">Add Image</label>
+          <input type="file" id="imageInput" accept="image/*">
+          <button id="addTodoBtn">Add</button>
+        </div>
+        <ul class="todo-list" id="todoList"></ul>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="completed">Completed</button>
+          <button class="filter-btn" data-filter="pending">Pending</button>
+        </div>
+      </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

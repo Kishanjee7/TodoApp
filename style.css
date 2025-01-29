@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(235, 223, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.todo-container{
+    background: rgba(168, 234, 214, 0.324);
+    padding: 20px;
+    padding-top: 2px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0px 5px 15px green;
+}
+.todo-container #todoname{
+    text-align: center;
+    padding: 5px;
+    font-family: a;
+    margin-bottom: 5px;
+}
+hr{
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    color: #512da8;
+    height: 1px;
+}
+.todo-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.todo-header input[type="text"]{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid purple;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px purple;
+}
+.todo-header input[type="file"]{
+    display: none;
+}
+.todo-header label{
+    background: #7e57c2;
+    color: rgb(252, 253, 251);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+}
+.todo-header button{
+    background: #ef4ddc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.todo-header button:hover{
+    background: #512da8;
+}
+.todo-list{
+    margin-top: 20px;
+    list-style: none;
+    padding: 0px;
+}
+
+.todo-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ede7f6;
+    padding: 10px;
+    border: 1px solid #d1c4e9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.todo-item img{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+.todo-item .text{
+    flex: 1;
+    margin-left: 10px;
+}
+.todo-item .actions button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #7e57c2;
+}
+.todo-item .actions button:hover{
+    color: #5e35b1;
+}
+.todo-item.completed .text{
+    text-decoration: line-through;
+    color: #7e57c2;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.filters button{
+    padding: 8px 12px;
+    border: none;
+    background: #7e57c2;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.filters button.active{
+    background: #512da8;
+}
+#addImg{
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
